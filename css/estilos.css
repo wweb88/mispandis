@@ -1,6 +1,6 @@
 @media all and (min-width: 200px){
 	body{
-		padding-top: 70px;
+		padding-top: 148px;
 	}
 	footer{
 		padding: 15px 0;
@@ -74,7 +74,8 @@
 	.bg-2{
 		background-color: #BBADB6;
 	}
-	.crowdfounding button{
+	
+	.crowdfounding .btn-unete{
 		border-color: #f44336;
 		color: red
 		border: 2px solid black;
@@ -84,11 +85,13 @@
 		font-size: 16px;
 		cursor: pointer;
 	}
+	
 	.iconosredes nav{
 		text-align: center;
 	}
 	.iconosredes nav ul{
 		list-style-type: none;
+		padding: 0;
 	}
 	.iconosredes nav ul li {
 		display: inline-block;
@@ -114,13 +117,9 @@
 	.info .eventos p{
 		text-align: right;
 	}
-	.intentofondo{
-		background-color: #665F64;
-		height: 500px;
-		background-image: url("../img/nomnom.png");
-		background-size: auto 95%;
-		background-repeat: no-repeat;
-		background-position: center bottom;
+	.owl-carousel figure{
+		margin: 0 auto 20px auto;
+		max-width: 350px;
 	}
 	.redes{
 		padding: 2rem 0;
@@ -130,6 +129,9 @@
 		color: white;
 		font-size: 150%;
 	}	
+	.redes .telefono a{
+		color: white;
+	}
 	.redes .rescue{
 		font-weight: bold;
 		color: white;
@@ -177,12 +179,22 @@
 		z-index: 999;
 		box-shadow: 0 5px 5px rgba(0,0,0,.69);
 	}
+	.slider-caja{
+		position: relative;
+		height: 120px;
+		background-color: #665F64;
+	}
 }
 @media all and (min-width: 576px){
-	
+	.slider-caja{
+		height: 216px;
+	}
 }
 
 @media all and (min-width: 768px){
+	body{
+		padding-top: 82px;
+	}
 	header{
 		padding: 8px 0 5px 0;
 	}
@@ -212,12 +224,31 @@
 		display: block;
 		padding: 0;
 	}
+	.slider-caja{
+		height: 288px;
+	}
 }
 
 @media all and (min-width: 992px){
-	
+	.slider-caja{
+		height: 371px;
+	}
 }
 
 @media all and (min-width: 1200px){
-	
+	.slider-caja{
+		height: 450px;
+	}
+}
+
+@media all and (min-width: 1400px){
+	.slider-caja{
+		height: 525px;
+	}
+}
+
+@media all and (min-width: 1600px){
+	.slider-caja{
+		height: 600px;
+	}
 }

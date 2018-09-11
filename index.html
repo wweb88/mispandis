@@ -38,6 +38,9 @@
 							<a class="nav-link" href="#">Pay-per-view</a>
 						  </li>
 						  <li class="nav-item">
+						  	<a class="nav-link" href="#" data-toggle="modal" data-target="#modalFormulario">Inscribete</a>
+						  </li>
+						  <li class="nav-item">
 							<a class="nav-link" href="#">Contacto</a>
 						  </li>
 						</ul>
@@ -46,14 +49,22 @@
 			</header>
 		</div>
 	</div>
-	<div class="intentofondo">
+	<div class="slider-caja">
+		<div class="pageblock" id="fullscreen">
+			<div class="slider">
+				<div class="slide" id="slide1"><div class="slidecontent"></div></div>
+				<div class="slide" id="slide2"><div class="slidecontent"></div></div>
+				<div class="slide" id="slide3"><div class="slidecontent"></div></div>
+			</div>
+		</div>
 	</div>
+	<div class="intentofondo"></div>
 	<div class="bg-1">
 		<div class="container-fluid">
 			<div class="row redes">
 				<div class="col-12 col-md-4 mb-3 mb-md-0">
 					<div class="telefono text-center">
-						+481 516 2342 	
+						<a href="tel:+4815162342">+481 516 2342</a> 	
 					</div>
 				</div>
 				<div class="col-12 col-md-4 mb-3 mb-md-0">
@@ -86,15 +97,34 @@
 					<p>Por primera vez en Chile, no te pierdas este
 					evento único, el próximo Sábado 15 de Septiembre
 					en el estadio del zoológico de Buin Zoo.</p>
-					<div class="imagencuerpo ml-md-auto">
-						<img src="img/wwf2.jpg">
+
+					<div class="owl-carousel">
+						<div class="item">
+							<figure>
+								<img src="img/wwf1.jpg">
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="img/wwf2.jpg">
+							</figure>
+						</div>
 					</div>
 				</div>
 			</div>	
 			<div class="col-12 col-md-6">			
 				<div class="crowdfounding text-left">
-					<div class="imagencuerpo">
-						<img src="img/wwf1.png">
+					<div class="owl-carousel">
+						<div class="item">
+							<figure>
+								<img src="img/mocha.jpg">
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="img/sw.jpg">
+							</figure>
+						</div>
 					</div>
 					<h1>Membership</h1>
 					<p>CONOCE LOS EVENTOS EXCLUSIVOS</p>
@@ -104,7 +134,7 @@
 					y accede a más de 100 eventos programados
 					entre Panda in a Cell, TLC, luchas en pareja
 					!Y mucho más! No dejes ir tu oportunidad.</p>
-					<button type="button" name="button">¡Únete!</button>
+					<button type="button" class="btn btn-unete" data-toggle="modal" data-target="#modalFormulario">¡Únete!</button>
 				</div>
 			</div>
 		</div>	
@@ -117,9 +147,78 @@
 		</div>
 	</div>
 	
+
+	<div class="modal fade" id="modalFormulario" tabindex="-1" role="dialog" >
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalCenterTitle">Inscribete</h5>
+	        <button type="button" class="close" data-dismiss="modal">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Tu correo</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+			    <small id="emailHelp" class="form-text text-muted">Te enviaremos toda la publicidad que podamos!!</small>
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Tu contraseña</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  <div class="form-group form-check">
+			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+			    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Enviar formulario</button>
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	
-<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<script type="text/javascript" src="js/jquery.simpleslider.js"></script>
+<script type="text/javascript" src="js/backstretch.js"></script>
+<script type="text/javascript" src="js/mando-slider.js"></script>
+<script type="text/javascript" src="js/transit.js"></script>
+
+<link rel="stylesheet" href="css/owl.carousel.css">
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+
+<script>
+	$(document).ready(function(){
+		/* INDICO IMAGENES SEGÚN SLIDE */
+		$(".slide#slide1").backstretch("img/nomnom.png");
+		$(".slide#slide2").backstretch("img/nomnom2.png");
+		$(".slide#slide3").backstretch("img/nomnom3.png");
+
+		/* CONFIGURO "CARRUSEL" */
+		var owl = $('.owl-carousel');
+		owl.owlCarousel({
+			loop: true,
+			margin: 0,
+			responsiveClass: true,
+			nav: true,
+			dots: true,
+			autoplay:true,
+    		autoplayTimeout:1000,
+			responsive:{
+				0:{
+					items: 1
+				}
+			}
+		});
+	});
+</script>
 </body>
 </html>
