@@ -19,7 +19,7 @@
 	header .navbar .navbar-toggler{
 		display: block;
 		width: 100%;
-		border-color: #ffffff;
+		border-color: #000000;
 	}
 	header .navbar .navbar-nav{
 		list-style-type: none;
@@ -30,8 +30,8 @@
 		margin: 0 0 2px 0;
 	}
 	header .navbar .navbar-nav .nav-item .nav-link{
-		color: #ffffff;
-		border: 1px solid #ffffff;
+		color: #000000;
+		border: 1px solid #000000;
 		border-radius: 4px;
 		display: block;
 		padding: 5px 10px;
@@ -41,32 +41,18 @@
 		-o-transition: .2s;
 		transition: .2s;
 	}
-	header .navbar .navbar-nav .nav-item .nav-link:hover{
-		color: #646464;
+	header .navbar .navbar-nav .nav-item .nav-link:hover,
+	header .navbar .navbar-nav .nav-item.active .nav-link{
+		color: #ff0000;
 	}
 	header .navbar .logo{
 		width: 200px;
 		margin: 0 auto .6rem auto;	
 	}
-	header .navbar .logo .imagen {
-		display: inline-block;
-		vertical-align: middle;
-		width: 70px;	
-	}
-	header .navbar .logo .imagen img{
+	header .navbar .logo img{
 		width: 100%;
 		height: auto;
-		display: block; /* maña nelson espacio abajo imagenes */
-	}	
-	header .navbar .logo .texto{
-		display: inline-block;
-		vertical-align: middle;
-	}	
-	header .navbar .logo .texto p{
-		color: white;
-		font-family: 'Permanent Marker', cursive;
-		padding-top: 16px;
-		font-size: x-large;
+		display: block;
 	}
 	.bg-1{
 		background-color:  #665F64;
@@ -224,7 +210,8 @@
 	  color: white;
 	}
 	.top-ban{
-		background-color: #F30303;
+		background-color: rgba(255,255,255,1);
+		background-image: url('../img/fondo-panda.jpg');
 		position: fixed;
 		top: 0;
 		width: 100%;	
@@ -236,6 +223,29 @@
 		position: relative;
 		height: 120px;
 		background-color: #665F64;
+	}
+	.slider-caja .texto{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 10px;
+		padding: 10px;
+		background-color: rgba(0,0,0,.5);
+		border-color: 1px solid #343434;
+		z-index: 65;
+		color: #ffffff;
+		text-align: center;
+		font-size: 30px;
+		font-family: 'Amatic SC', cursive;
+	}
+	.slider-caja .texto figure{
+		margin: 0 auto;
+		max-width: 200px;
+	}
+	.slider-caja .texto figure img{
+		width: 100%;
+		height: auto;
+		display: block;
 	}
 }
 @media all and (min-width: 576px){

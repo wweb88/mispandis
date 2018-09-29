@@ -7,7 +7,7 @@ Versión: 1.7
 ;(function($){
 	$.fn.rut = function(opt){
 		var defaults = $.extend({
-			error_html: '<span class="rut-error">Rut incorrecto</span>',
+			error_html: '<span class="rut-error alert alert-danger d-block small">Rut incorrecto</span>',
 			formatear : true,
 			on : 'blur',
 			required : true,
@@ -39,6 +39,7 @@ Versión: 1.7
 	}
 	function mostrar_error(input, error){
 		input.closest('.rut-container').append(error);
+		return false;
 	}
 })(jQuery);
 jQuery.rut = {
