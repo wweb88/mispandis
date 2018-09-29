@@ -1,13 +1,14 @@
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Mis Pandis</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/estilos.css">
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<title>Mis Pandis</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head> 
 <body>
 	<div class="top-ban">
@@ -49,7 +50,7 @@
 			</header>
 		</div>
 	</div>
-	<div class="slider-caja">
+	<section class="slider-caja">
 		<div class="pageblock" id="fullscreen">
 			<div class="slider">
 				<div class="slide" id="slide1"><div class="slidecontent"></div></div>
@@ -57,14 +58,13 @@
 				<div class="slide" id="slide3"><div class="slidecontent"></div></div>
 			</div>
 		</div>
-	</div>
-	<div class="intentofondo"></div>
+	</section>
 	<div class="bg-1">
 		<div class="container-fluid">
 			<div class="row redes">
 				<div class="col-12 col-md-4 mb-3 mb-md-0">
 					<div class="telefono text-center">
-						<a href="tel:+4815162342">+481 516 2342</a> 	
+						<a href="tel:+56987654321">+569 8765 4321</a> 	
 					</div>
 				</div>
 				<div class="col-12 col-md-4 mb-3 mb-md-0">
@@ -76,10 +76,10 @@
 					<div class="iconosredes">
 						<nav>
 							<ul>
-								<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href=""><i class="fa fa-google" aria-hidden="true"></i></a></li>
-								<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+								<li><i class="fa fa-facebook compartir1" aria-hidden="true"></i></li>
+								<li><i class="fa fa-google compartir2" aria-hidden="true"></i></li>
+								<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+								<li><a href="mailto:soporte@mispandis.cl"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -88,8 +88,8 @@
 		</div>
 	</div>
 	<div class="container py-5">  <!--py padding y -->
-		<div class="row info">
-			<div class="col-12 col-md-6">
+		<section class="row info mb-4">
+			<article class="col-12 col-md-6">
 				<div class="eventos text-right">					
 					<h1>PANDAMANIA XXXV</h1>
 					<p>¡¡¡¡¡7 DE ABRIL 2019!!!!</p>
@@ -98,7 +98,7 @@
 					evento único, el próximo Sábado 15 de Septiembre
 					en el estadio del zoológico de Buin Zoo.</p>
 
-					<div class="owl-carousel">
+					<div class="owl-carousel tipo1">
 						<div class="item">
 							<figure>
 								<img src="img/wwf1.jpg">
@@ -111,10 +111,10 @@
 						</div>
 					</div>
 				</div>
-			</div>	
-			<div class="col-12 col-md-6">			
+			</article>	
+			<article class="col-12 col-md-6">			
 				<div class="crowdfounding text-left">
-					<div class="owl-carousel">
+					<div class="owl-carousel tipo1">
 						<div class="item">
 							<figure>
 								<img src="img/mocha.jpg">
@@ -136,9 +136,66 @@
 					!Y mucho más! No dejes ir tu oportunidad.</p>
 					<button type="button" class="btn btn-unete" data-toggle="modal" data-target="#modalFormulario">¡Únete!</button>
 				</div>
+			</article>
+		</section>
+		<section class="galeria-comentario mt-3 mb-4">
+			<div class="owl-carousel tipo2">
+				<div class="item">
+					<img src="img/testimonio-1.jpg">
+					<div class="capa">
+						<div class="tabla">
+							<div class="celda">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolorem odit officiis aspernatur rem excepturi suscipit minima, similique, animi, est sit vero illo quasi! Dolores temporibus voluptatibus ullam blanditiis odit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/testimonio-2.jpg">
+					<div class="capa">
+						<div class="tabla">
+							<div class="celda">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolorem odit officiis aspernatur rem excepturi suscipit minima, similique, animi, est sit vero illo quasi! Dolores temporibus voluptatibus ullam blanditiis odit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>	
+		</section>
+		<div class="section row galeria justify-content-center">
+			<div class="col-6 col-md-4 col-xl-3 mb-3">
+				<div class="gal" data-toggle="modal" data-target="#gal1">
+					<img src="img/gal-1.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xl-3 mb-3">
+				<div class="gal" data-toggle="modal" data-target="#gal2">
+					<img src="img/gal-2.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xl-3 mb-3">
+				<div class="gal" data-toggle="modal" data-target="#gal3">
+					<img src="img/gal-3.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xl-3 mb-3">
+				<div class="gal" data-toggle="modal" data-target="#gal4">
+					<img src="img/gal-4.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xl-3 mb-3">
+				<div class="gal" data-toggle="modal" data-target="#gal5">
+					<img src="img/gal-5.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xl-3 mb-3">
+				<div class="gal" data-toggle="modal" data-target="#gal6">
+					<img src="img/gal-6.jpg" alt="">
+				</div>
+			</div>
+		</div>
 	</div>
+	
 	<div class="bg-2">
 		<div class="container">
 			<footer>
@@ -149,7 +206,7 @@
 	
 
 	<div class="modal fade" id="modalFormulario" tabindex="-1" role="dialog" >
-	  <div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <h5 class="modal-title" id="exampleModalCenterTitle">Inscribete</h5>
@@ -158,33 +215,265 @@
 	        </button>
 	      </div>
 	      <div class="modal-body">
-	        <form>
-			  <div class="form-group">
-			    <label for="exampleInputEmail1">Tu correo</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-			    <small id="emailHelp" class="form-text text-muted">Te enviaremos toda la publicidad que podamos!!</small>
-			  </div>
-			  <div class="form-group">
-			    <label for="exampleInputPassword1">Tu contraseña</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-			  </div>
-			  <div class="form-group form-check">
-			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-			    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
-			  </div>
-			  <button type="submit" class="btn btn-primary">Enviar formulario</button>
+	      	<p class="form-text">Te enviaremos toda la publicidad que podamos!!</p>
+	        <form action="#" class="row">
+	        	<div class="col-6">
+					<div class="form-group">
+						Email:<br>
+						<input type="email" name="email" class="form-control"required>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-group">
+						RUT:
+						<input type="text" name="rut" class="form-control input-rut" required>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-group">
+						Nombre completo:<br>
+						<input type="text" name="nombre" class="form-control solo-texto" required>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form-group">
+						Fecha de nacimiento:
+						<div id="datepicker"></div>
+					</div>
+				</div>
+				<div class="col-6">
+					<br>
+					<div class="form-group">
+						<input type="text" name="fecha" class="form-control" id="fecha-seleccionada" readonly placeholder="Seleccione fecha" required>
+					</div>
+					<div class="form-group">
+						Región:
+						<select id="regiones" class="form-control" required></select>
+					</div>
+					<div class="form-group">
+						Comuna:
+						<select id="comunas" class="form-control" required></select>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-group">
+						Tipo Vivienda:
+						<select name="" class="form-control" required>
+							<option value=""></option>
+							<option>Casa con patio grande</option>
+							<option>Casa con patio pequeño</option>
+							<option>Casa sin patio</option>
+							<option>Departamento</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-12 text-right">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<button type="submit" class="btn btn-primary">Enviar formulario</button>
+				</div>
 			</form>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 	      </div>
 	    </div>
 	  </div>
+	</div>
+
+	<div class="modal fade" id="gal1" tabindex="-1" role="dialog" >
+	  	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	    	<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Panda #1</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row modal-galeria">
+						<div class="col-6">
+							<div class="foto">
+								<img src="img/gal-1.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="texto">
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse necessitatibus.</p>
+								<p>Odit voluptatum cumque quod quidem. Quo ex distinctio adipisci culpa reiciendis, explicabo assumenda minima est, sequi in facere sapiente. Quae, eius autem.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="gal2" tabindex="-1" role="dialog" >
+	  	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	    	<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Panda #2</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row modal-galeria">
+						<div class="col-6">
+							<div class="foto">
+								<img src="img/gal-2.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="texto">
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse necessitatibus.</p>
+								<p>Odit voluptatum cumque quod quidem. Quo ex distinctio adipisci culpa reiciendis, explicabo assumenda minima est, sequi in facere sapiente. Quae, eius autem.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="gal3" tabindex="-1" role="dialog" >
+	  	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	    	<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Panda #3</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row modal-galeria">
+						<div class="col-6">
+							<div class="foto">
+								<img src="img/gal-3.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="texto">
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse necessitatibus.</p>
+								<p>Odit voluptatum cumque quod quidem. Quo ex distinctio adipisci culpa reiciendis, explicabo assumenda minima est, sequi in facere sapiente. Quae, eius autem.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="gal4" tabindex="-1" role="dialog" >
+	  	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	    	<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Panda #4</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row modal-galeria">
+						<div class="col-6">
+							<div class="foto">
+								<img src="img/gal-4.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="texto">
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse necessitatibus.</p>
+								<p>Odit voluptatum cumque quod quidem. Quo ex distinctio adipisci culpa reiciendis, explicabo assumenda minima est, sequi in facere sapiente. Quae, eius autem.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="gal5" tabindex="-1" role="dialog" >
+	  	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	    	<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Panda #5</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row modal-galeria">
+						<div class="col-6">
+							<div class="foto">
+								<img src="img/gal-5.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="texto">
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse necessitatibus.</p>
+								<p>Odit voluptatum cumque quod quidem. Quo ex distinctio adipisci culpa reiciendis, explicabo assumenda minima est, sequi in facere sapiente. Quae, eius autem.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="gal6" tabindex="-1" role="dialog" >
+	  	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	    	<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Panda #6</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row modal-galeria">
+						<div class="col-6">
+							<div class="foto">
+								<img src="img/gal-6.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="texto">
+								<h3>Lorem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse necessitatibus.</p>
+								<p>Odit voluptatum cumque quod quidem. Quo ex distinctio adipisci culpa reiciendis, explicabo assumenda minima est, sequi in facere sapiente. Quae, eius autem.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+
 
 <link rel="stylesheet" type="text/css" href="css/slider.css" />
 <script type="text/javascript" src="js/jquery.simpleslider.js"></script>
@@ -195,30 +484,103 @@
 <link rel="stylesheet" href="css/owl.carousel.css">
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 
+<script type="text/javascript" src="js/regiones-comunas.js"></script>
+
+<script type="text/javascript" src="js/jquery.rut.chileno.js"></script>
+
 <script>
 	$(document).ready(function(){
 		/* INDICO IMAGENES SEGÚN SLIDE */
-		$(".slide#slide1").backstretch("img/nomnom.png");
-		$(".slide#slide2").backstretch("img/nomnom2.png");
-		$(".slide#slide3").backstretch("img/nomnom3.png");
+		$(".slide#slide1").backstretch("img/slide1.jpg");
+		$(".slide#slide2").backstretch("img/slide2.jpg");
+		$(".slide#slide3").backstretch("img/slide3.jpg");
 
 		/* CONFIGURO "CARRUSEL" */
-		var owl = $('.owl-carousel');
+		var owl = $('.owl-carousel.tipo1');
 		owl.owlCarousel({
 			loop: true,
 			margin: 0,
 			responsiveClass: true,
 			nav: true,
-			dots: true,
+			dots: false,
 			autoplay:true,
-    		autoplayTimeout:1000,
+    		autoplayTimeout: 2000,
 			responsive:{
 				0:{
 					items: 1
 				}
 			}
 		});
+
+
+		var owl = $('.owl-carousel.tipo2');
+		owl.owlCarousel({
+			loop: true,
+			margin: 0,
+			responsiveClass: true,
+			nav: true,
+			dots: false,
+			autoplay:true,
+			autoplayTimeout: 4000,
+			responsive:{
+				0:{
+					items: 1
+				}
+			}
+		});
+
+		var url_actual = window.location.href;
+		$('.compartir1').click(function(){
+            window.open('http://www.facebook.com/sharer.php?u='+url_actual);
+        });
+        $('.compartir2').click(function(){
+            window.open('http://twitter.com/home?status='+url_actual);
+        });
+        $('.compartir3').click(function(){
+            window.open('https://www.instagram.com/?hl=es-la');
+        });
+
+        $.datepicker.regional['es'] = {
+			closeText: 'Cerrar',
+			prevText: '< Ant',
+			nextText: 'Sig >',
+			currentText: 'Hoy',
+			monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+			monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+			dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+			dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+			dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+			weekHeader: 'Sm',
+			dateFormat: 'dd/mm/yy',
+			firstDay: 1,
+			isRTL: false,
+			showMonthAfterYear: false,
+			yearSuffix: ''
+		};
+		$.datepicker.setDefaults($.datepicker.regional['es']);
+        $(function(){
+			$("#datepicker").datepicker({
+				yearRange: '1920:2000',
+				changeMonth: true,
+				changeYear: true,
+				onSelect: function(dateText) {
+					$('#fecha-seleccionada').val(dateText);
+				}
+			});
+		});
+
+        $('.input-rut').rut();
+		
+
+		$('#modalFormulario').modal('show');
 	});
+
+	$('.solo-texto').keypress(function(event){
+        var inputValue = event.which;
+        if(!(inputValue >= 65 && inputValue <= 120) && (inputValue != 32 && inputValue != 0 && inputValue != 8)) { 
+            event.preventDefault(); 
+        }
+    });
 </script>
 </body>
 </html>

@@ -85,7 +85,54 @@
 		font-size: 16px;
 		cursor: pointer;
 	}
-	
+	.galeria .gal{
+		cursor: pointer;
+	}
+	.galeria .gal img{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.galeria-comentario{
+		border: 1px solid #949494;
+		border-radius: 1rem;
+		overflow: hidden;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.galeria-comentario .item{
+		position: relative;
+	}
+	.galeria-comentario .item img{
+		width: 100%;
+		height: auto;
+		display: block;
+		opacity: .5;
+	}
+	.galeria-comentario .item .capa{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin: 0 auto;
+		width: 80%;
+		height: 100%;
+		z-index: 20;
+	}
+	.galeria-comentario .item .capa .tabla{
+		display: table;
+		width: 100%;
+		height: 100%;
+	}
+	.galeria-comentario .item .capa .tabla .celda{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+	.galeria-comentario .item .capa .tabla .celda p{
+		margin: 0;
+		font-weight: 700;
+	}
 	.iconosredes nav{
 		text-align: center;
 	}
@@ -96,6 +143,7 @@
 	.iconosredes nav ul li {
 		display: inline-block;
 		vertical-align: middle;
+		cursor: pointer;
 	}
 	.info .imagencuerpo{
 		max-width: 300px;
@@ -116,6 +164,11 @@
 	}	
 	.info .eventos p{
 		text-align: right;
+	}
+	.modal-galeria .foto img{
+		width: 100%;
+		height: auto;
+		display: block;
 	}
 	.owl-carousel figure{
 		margin: 0 auto 20px auto;
