@@ -16,7 +16,9 @@
 			<header>
 				<nav class="navbar navbar-expand-md navbar-light">
 					<figure class="logo">
-						<img src="img/logo-ewwf.png" alt="">
+						<a href="#">
+							<img src="img/logo-ewwf.png" alt="">
+						</a>
 					</figure>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -486,24 +488,32 @@
 		</div>
 	</div>
 	
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script> <!-- LIBRERIA JQUERY -->
+<script src="js/popper.min.js"></script> <!-- LIBRERIA PARA BOOTSTRAP SLIDER -->
+<script src="js/bootstrap.min.js"></script> <!-- LIBRERIA BOOTSTRAP -->
+<script src="js/jquery-ui.js"></script> <!-- LIBRERIA JQUERYUI -->
 
 
+<!-- SLIDER -->
 <link rel="stylesheet" type="text/css" href="css/slider.css" />
 <script type="text/javascript" src="js/jquery.simpleslider.js"></script>
 <script type="text/javascript" src="js/backstretch.js"></script>
 <script type="text/javascript" src="js/mando-slider.js"></script>
 <script type="text/javascript" src="js/transit.js"></script>
+<!-- SLIDER -->
 
+<!-- CARRUSEL -->
 <link rel="stylesheet" href="css/owl.carousel.css">
 <script type="text/javascript" src="js/owl.carousel.js"></script>
+<!-- FIN CARRUSEL -->
 
+<!-- SCRIPT REGIONES Y COMUNAS -->
 <script type="text/javascript" src="js/regiones-comunas.js"></script>
+<!-- FIN REGIONES Y COMUNAS -->
 
+<!-- SCRIPT VALIDADOR RUT -->
 <script type="text/javascript" src="js/jquery.rut.chileno.js"></script>
+<!-- FIN VALIDADOR RUT -->
 
 <script>
 	$(document).ready(function(){
@@ -607,8 +617,6 @@
             e.preventDefault();
         }
     });
-
-
 
     $('#modalFormulario input[type="submit"]').click(function(){
     	if($('.rut-error').hasClass('error')){
